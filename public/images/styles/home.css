@@ -1,0 +1,109 @@
+.banner {
+    width: 100%
+}
+
+h3 {
+    margin: 0.625rem;
+    text-align: center;
+    font-size: var(--lg);
+    color: var(--grisOscuro);
+}
+
+.cards:hover {
+    box-shadow: 0 0 0.625rem var(--grisOscuro);
+}
+
+.cards {
+    width: 90%;
+    max-width: 18.75rem;
+    margin: 0 auto;
+    margin-top: 0.625rem;
+}
+
+.products {
+    width: 100%;
+}
+
+.description {
+    position: relative;
+    background: white;
+    line-height: 1.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.25rem;
+}
+
+.cards:hover .fa-truck {
+    transform: rotate(-90deg);
+}
+
+.fa-truck {
+    position: absolute;
+    right: 0.625rem;
+    top: -1.063rem;
+    padding: 0.5rem;
+    border: solid 0.063rem var(--verde);
+    border-radius: 50%;
+    color: var(--verde);
+    font-size: 0.813rem;
+    transition: transform 1s;
+}
+
+.container-numbers {
+    display: flex;
+}
+
+.price {
+    width: 6rem;
+    font-size: var(--md);
+}
+
+.percentage {
+    font-size: var(--sm);
+    color: var(--verde);
+}
+
+.cards:hover .product-name {
+    visibility: visible;
+    font-size: var(--sm);
+    font-weight: normal;
+    color: var(--grisOscuro);
+    padding-top: 1rem;
+}
+
+.product-name {
+    visibility: hidden;
+}
+
+
+@media (min-width: 426px) {
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 45%;
+        box-shadow: 0 0 0.625rem rgb(100, 100, 100);
+    }
+
+    .container-numbers {
+        gap: 1.25rem;
+    }
+
+    .product-name {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        width: 30%;
+    }
+
+    .container-numbers {
+        gap: 0.063rem;
+    }
+
+}

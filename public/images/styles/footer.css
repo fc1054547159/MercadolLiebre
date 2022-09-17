@@ -1,0 +1,39 @@
+.icono-footer:hover{
+    color: var(--amarillo);
+}
+
+.icono-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--celeste);
+    transition: all 400ms;
+}
+
+footer {
+    padding-bottom: 1rem;
+}
+
+.sectionsFooter {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.copyRight {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+@media (min-width: 769px){
+    footer{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+      
+    }
+
+    .sectionsFooter{
+        width: 32%;
+    }
+}

@@ -1,0 +1,151 @@
+.header {
+    padding: 1.25rem;
+    background-color: var(--amarillo);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.563rem;
+}
+
+.logo {
+    width: 8rem;
+}
+
+.busqueda {
+    width: auto;
+    height: 1.5rem;
+    display: flex;
+    align-self: flex-end;
+    border-radius: 1.875rem;
+}
+
+.buscador {
+    width: 7rem;
+    border: none;
+    outline: none;
+    border-radius: 1.875rem 0 0 1.875rem;
+}
+
+.container input::placeholder {
+    font-size: 0.8rem;
+    font-family: var(--primaryFont);
+}
+
+.search-btn {
+    border: none;
+    background: white;
+    padding-right: 0.313rem;
+    border-radius: 0 1.875rem 1.875rem 0;
+}
+
+.compras {
+    font-size: var(--ssm);
+    text-align: center;
+}
+
+.main-navbar {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    font-size: var(--ssm);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-burguer {
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+}
+
+.burger-menu {
+    padding: 0.438rem 0;
+    max-width: 1.875rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--celeste);
+    color: var(--grisClaro);
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 425px) {
+    .logo {
+        width: 30%;
+    }
+
+    .buscador {
+        width: 13rem;
+        padding: 0.625rem;
+    }
+
+    .busqueda{
+        align-self: center;
+    }
+
+    .compras{
+        align-self: center;
+    }
+
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+
+    .main-navbar ul {
+        display: flex;
+        gap: 0.813rem;
+    }
+
+    .container-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .container-numbers {
+        gap: 1.25rem;
+    }
+
+    .product-name {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 20rem;
+    }
+    
+
+    .buscador {
+        width: 25rem;
+        height: 2rem;
+    }
+
+    .search-btn {
+        height: 2rem;
+    }
+
+}
